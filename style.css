@@ -10,6 +10,10 @@ html{
     scroll-behavior: smooth;
 }
 
+
+/* ------- HEADER SECTION ------- */
+
+
 .contenedor-header{
     background: #1a1d1f;
     position: fixed;
@@ -56,13 +60,49 @@ html{
     display: none;
 
 }
+
+
+/* ------- HEADER QUERIES ------- */
+
+
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff; 
+        padding: 10px 0;
+    }
+}
+
+
+/* ------- HEADER ENDS ------- */
+
+
+/* ------- HOME SECTION ------- */
+
+
 .inicio{
     background: url(Imagenes/laptop-2838921_1280.jpg);
     background-size: cover;
     color: white;
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: 100dvh;
 }
 .inicio .contenido-banner{
     padding: 20px;
@@ -107,6 +147,17 @@ html{
     background-color: #1bb99a;
 
 }
+
+
+/* ------- HOME QUERIES ------- */
+
+
+/* ------- HOME ENDS ------- */
+
+
+/* ------- ABOUT ME SECTION ------- */
+
+
 .sobremi{
     background-color: #1e2326;
     color: #fff;
@@ -214,6 +265,27 @@ html{
 .sobremi button a{
     color: white;
 }
+
+
+/* ------- ABOUT ME QUERIES ------- */
+
+
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+}
+
+
+/* ------- ABOUT ME ENDS ------- */
+
+
+/* ------- SKILLS SECTION ------- */
+
+
 .skills{
     background-color: #252A2E;
     color: #fff;
@@ -363,6 +435,30 @@ html{
     0%{width: 0%;}
     100%{width: 86%;}
 }
+
+/* ------- SKILLS QUERIES ------- */
+
+
+@media screen and (max-width:700px){
+    
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+}
+
+
+/* ------- SKILLS ENDS ------- */
+
+
+/* ------- CURRICULUM SECTION ------- */
+
+
 .curriculum{
     background-color: #1a1d1f;
     color: #fff;
@@ -442,6 +538,30 @@ html{
     position: relative;
     bottom: 4px;
 }
+
+/* ------- CURRICULUM QUERIES ------- */
+
+
+@media screen and (max-width:700px){
+
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+}
+
+
+/* ------- CURRICULUM ENDS ------- */
+
+
+/* ------- PORTFOLIO SECTION ------- */
+
+
 .portfolio{
     background-color: #252A2E;
     color: #fff;
@@ -501,6 +621,32 @@ html{
 .overlay a{
     color: #fff;
 }
+
+
+/* ------- PORTFOLIO QUERIES ------- */
+
+
+@media screen and (max-width:700px){
+
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+}
+
+
+/* ------- PORTFOLIO ENDS ------- */
+
+
+/* ------- CONTACTO SECTION ------- */
+
+
 .contacto{
     background-image: url(Imagenes/contact_bg.png);
     background-color: #1a1d1f;
@@ -586,6 +732,17 @@ html{
     display: inline-block;
     margin-right: 20px;
 }
+
+
+/* ------- CONTACTO QUERIES ------- */
+
+
+/* ------- CONTACTO ENDS ------- */
+
+
+/* ------- FOOTER SECTION ------- */
+
+
 footer{
     background-color: #252A2E;
     color: #fff;
@@ -625,67 +782,12 @@ footer .arriba{
     font-size: 18px;
 }
 
-@media screen and (max-width:980px){
-    nav{
-        display: none;
-    }
-    .nav-responsive{
-        display: block;
-    }
-    nav.responsive{
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 75px;
-        background-color: #252A2E;
-        width: 180px;
-    }
-    nav.responsive ul{
-        display: block !important;
-    }
-    nav.responsive ul li{
-        border-bottom: 1px solid #fff; 
-        padding: 10px 0;
-    }
-}
+/* ------- FOOTER QUERIES ------- */
+
+
+
 @media screen and (max-width:700px){
-    .sobremi .fila{
-        display: block;
-    }
-    .sobremi .fila .col{
-        width: fit-content;
-    }
 
-    .skills .fila{
-        display: block;
-    }
-    .skills .fila .col{
-        width: 100%;
-    }
-    .skills .fila .col .barra-skill{
-        width: 100%;
-    }
-
-    .curriculum .fila{
-        display: block;
-    }
-    .curriculum .fila .col{
-        width: 90%;
-    }
-    .curriculum .fila .derecha{
-        margin-left: 20px;
-    }
-
-    .portfolio .galeria{
-        display: block;
-        width: 100%;
-    }
-    .portfolio .galeria .proyecto{
-        max-width: 100%;
-    }
-    .portfolio .galeria .proyecto img{
-        width: 100%;
-    }
     .contacto .fila{
         display: block;
     }
@@ -693,3 +795,6 @@ footer .arriba{
         width: 100%;
     }
 }
+
+
+/* ------- FOOTER ENDS ------- */
