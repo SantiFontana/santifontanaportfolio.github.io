@@ -25,7 +25,7 @@ function efectoHabilidades(){
         habilidades[1].classList.add("HTML");
         habilidades[2].classList.add("CSS");
         habilidades[3].classList.add("Canva");
-        habilidades[4].classList.add("JAVA");
+        habilidades[4].classList.add("Python");
         habilidades[5].classList.add("comunicacion");
         habilidades[6].classList.add("trabajo");
         habilidades[7].classList.add("creatividad");
